@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attendee management</title>
+    <link rel="stylesheet" href="attendee management.css">
+    <link rel="stylesheet" href="form2.css">
+    <link rel="stylesheet" href="navbaroe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+<!-- navigation bar -->
+<nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-dark bg-light">
+  <div class="container-fluid ms-5 text-dark">
+    <a class="navbar-brand" href="#">
+      <img class="img-fluid" src="Group 3 (2).png" alt="">
+  </a>
+  <div class="container d-flex">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon bg-dark"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul style="padding-right: 10%;" class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li id="fill1" class="nav-item">
+            <a class="nav-link text-dark fs-4 fw-bold me-3" href="OccurEase.html">HOME</a>
+        </li>
+        
+        <li id="fill2" class="nav-item dropdown">
+
+          <a class="nav-link dropdown-toggle text-dark fs-4 fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            SOLUTION
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="virtual.html">Virtual Event</a>
+          
+            </li>
+
+            <li><a class="dropdown-item" href="inperson.html">In-person Event</a></li>
+          </ul>
+        </li>
+
+        <li id="fill3" class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark fs-4 fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            EVENTS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Corporate.html">Corporate Event</a></li>
+            <li><a class="dropdown-item" href="Noncorporate.html">Non-Corporate Event</a></li>
+          </ul>
+        </li>
+
+
+        <li id="fill4" class="nav-item">
+          <a class="nav-link text-dark fs-4 fw-bold" href="aboutus.html">ABOUT US</a>
+        </li>
+        
+      </ul>
+    </div>
+    <a href="login2.html">
+      <button type="button" class="btn btn-danger text-light">Sign Up</button>
+      </a>
+  </div>
+  </div>   
+</nav>
+
+<!-- heading -->
+    <div  class=" text-center my-5">
+      <h1>  <strong style="color: rgb(215, 84, 106);" >Master the art of guest management  </strong> : create unforgettable event experiences with OccurEase</h1>
+  </div>
+
+<!-- Main points -->
+<div class="manage">
+    
+  <ul class="pointani">
+    <li class="card" style="--color:#ececec; --bg-color:#E98B43">
+      <div class="icon"><i class="fa-solid fa-address-card" style="color: #edeff2;"></i></div>
+      <div class="title">Effortless Registration</div>
+      <div class="content"> Our attendee management system simplifies the registration process, allowing attendees to sign up for your event with just a few clicks. </div>
+    </li>
+    <li class="card" style="--color:#ececec; --bg-color:#C23D2A">
+      <div class="icon"><i class="fa-regular fa-user" style="color: #edeff3;"></i></div>
+      <div class="title">Personalized Experiences</div>
+      <div class="content">Customize attendee profiles and gather valuable information to tailor your event experience to their preferences, ensuring maximum satisfaction. </div>
+    </li>
+    <li class="card" style="--color:#ececec; --bg-color:#842C2A">
+      <div class="icon"><i class="fa-sharp fa-solid fa-timer" style="color: #f4f6fb;"></i></div>
+      <div class="title">Real-time Updates</div>
+      <div class="content"> Keep attendees in the loop with instant notifications about schedule changes, speaker updates, and important announcements, ensuring they never miss a beat.</div>
+    </li>
+    <li class="card" style="--color:#ececec; --bg-color:#022F46">
+      <div class="icon"><i class="fa-solid fa-chart-column"></i></div>
+      <div class="title">Seamless Check-in</div>
+      <div class="content">Say goodbye to long queues at the entrance. Our attendee management tools enable swift check-ins, saving time and creating a positive first impression for your guests. </div>
+    </li>
+    <li class="card" style="--color:#ececec; --bg-color:#032437">
+      <div class="icon"><i class="fa-solid fa-circle-star"></i></div>
+      <div class="title">Secure Data Management</div>
+      <div class="content">Rest assured that attendee data is handled securely and in compliance with privacy regulations, ensuring the confidentiality of personal information.</div>
+    </li>
+  </ul>
+ </div>  
+ 
+<!-- Form for event creation -->
+<div class="main">
+  <div class="container1">
+      <form action="" method="post">
+       <h2>Registration</h2>
+       <div class="content">
+          <div class="input-box">
+              <label for="name">Full Name</label>
+              <input type="text" placeholder=" Enter full name " name="name" required>
+           </div>
+           <div class="input-box">
+              <label for="username">Username</label>
+              <input type="text" placeholder=" Enter username " name="uname" required>
+           </div>
+           <div class="input-box">
+              <label for="email">Email</label>
+              <input type="email" placeholder=" Enter your valid email address" name="email" required>
+           </div>
+           <div class="input-box">
+              <label for="phone">Phone Number</label>
+              <input type="tel" placeholder=" Enter phone number " name="phone" required>
+           </div>
+           <div class="input-box">
+              <label for="code"> Code</label>
+              <input type="code" placeholder=" create your own code" name="Code" required>
+           </div>
+           
+           <div class="input-box">
+            <label for="description"> event description and requirements</label>
+            <input type="description" placeholder=" give detail information about your event" name="description" required>
+         </div>
+           <span class="gender-title"> Gender</span>
+           <div class="gender-category">
+              <input type="radio" name="gennder" id="male">
+              <label for="male">Male</label>
+              <input type="radio" name="gennder" id="female">
+              <label for="female">Female</label>
+              <input type="radio" name="gennder" id="other">
+              <label for="other">Other</label>
+
+           </div>
+       </div>
+       <div class="alert">
+          <p>By clicking sign up,you agree to our <a href="#">terms</a>  <a href="#">privacy Policy</a> and <a href="#">cookies policy</a>.</p>
+       </div>
+       <div class="button-container">
+       <button type="submit">Register</button>
+       </div>
+      </form>
+
+  </div>
+</div> 
+
+<!-- Footer -->
+<footer style="background-image: url(Rectangle\ 2795.png); background-repeat: no-repeat; background-size: cover;" class="text-white text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container">
+    <!--Grid row-->
+    <div class="row mt-5">
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-12 mb-3">
+
+       <img  class="img-fluid mb-3 mt-0" src="Group 985.png" alt="">
+        <p>
+          With meticulous attention to detail and a keen eye for creativity,
+           we bring your vision to life, transforming ordinary gatherings into unforgettable experiences.
+        </p>
+
+        <p>
+          From intimate social gatherings to large-scale corporate conferences, our team of dedicated professionals goes above and beyond 
+          to craft meticulously curated events that exceed your expectations.
+        </p>
+
+        <div class="mt-4">
+          
+          <!-- Twitter -->
+          <a type="button" class="btn btn-floating btn-lg"><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i></a>
+          <!-- Facebook-->
+          <a type="button" class="btn btn-floating  btn-lg"><i class="fa-brands fa-facebook-f fa-2xl" style="color: #fbf9f9;"></i></a>
+          <!-- Instagram -->
+          <a type="button" class="btn btn-floating btn-lg"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+          <!--You Tube  -->
+          <a type="button" class="btn btn-floating btn-lg"><i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i></a>
+          <!-- Linkedin -->
+          <a type="button" class="btn btn-floating btn-lg"><i class="fa-brands fa-linkedin-in fa-2xl" style="color: #ffffff;"></i></a>
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto my-5 p-4">
+        <h5 class="text-uppercase mb-4 fw-bold text-light">EVENTS</h5> 
+        <p class="fw-bold">
+          In-Person Events <br>
+          Virtual Events <br>
+          Non-Corporate  Events <br>
+          Corporate Events
+        </p>
+
+      <!--Grid column-->
+      <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 "> -->
+        <h5 class="text-uppercase mb-4 fw-bold text-light">PRODUCTS</h5>
+        <p class="fw-bold">
+        Event Platform <br>
+        Live-studio <br>
+        
+        Social-Video
+      </p>
+    <!--Grid row-->
+      </div>
+
+
+  <!--Grid column-->
+  <div class="col-lg-4 col-md-6 mb-4 mb-md-0 my-5 p-4">
+    <h5 class="text-uppercase mb-4 pb-1">UNLOCK 10% OFF YOUR FIRST BOOKING
+    
+    </h5>
+
+    <div class="form-outline form-white mb-4">
+        <div class="container d-flex">
+          <div class="input-box">
+            <input type="email" placeholder="Enter Email " name="email" required>
+         </div>
+         <button style="color: white; background-color:rgba(255, 85, 104, 1);
+         ">SUBMIT</button>
+        </div>
+      
+
+     <ul class="fa-ul">
+      <li class="mb-3">
+      </li>
+      <li class="mb-3">
+        <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">occurease@gmail.com</span>
+      </li>
+      <li class="mb-3">
+        <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">9461507032
+          <br>8529844152
+        </span>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row text-center pb-3">
+       <div class="col">© 2020 Copyright:
+        <a class="text-white" href="#">OccurEase.com</a></div>    
+    </div>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- End of .container -->
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+</body>
+</html>

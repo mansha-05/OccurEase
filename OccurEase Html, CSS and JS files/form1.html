@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form1</title>
+    <link rel="stylesheet" href="form1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+        <form action="" method="post">
+         <h2>Registration</h2>
+         <div class="content">
+            <div class="input-box">
+                <label for="name">Full Name</label>
+                <input type="text" placeholder=" Enter full name " name="name" required>
+             </div>
+             <div class="input-box">
+                <label for="username">Username</label>
+                <input type="text" placeholder=" Enter username " name="uname" required>
+             </div>
+             <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" placeholder=" Enter your valid email address" name="email" required>
+             </div>
+             <div class="input-box">
+                <label for="phone">Phone Number</label>
+                <input type="tel" placeholder=" Enter phone number " name="phone" required>
+             </div>
+             <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" placeholder=" Enter new password " name="password" required>
+             </div>
+             <div class="input-box">
+                <label for="confirm-password"> Confirm Password</label>
+                <input type="password" placeholder=" Confirm your password " name="confirmpassword" required>
+             </div>
+             <span class="gender-title"> Gender</span>
+             <div class="gender-category">
+                <input type="radio" name="gennder" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gennder" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gennder" id="other">
+                <label for="other">Other</label>
+
+             </div>
+         </div>
+         <div class="alert">
+            <p>By clicking sign up,you agree to our <a href="#">terms</a>  <a href="#">privacy Policy</a> and <a href="#">cookies policy</a>.</p>
+         </div>
+         <div class="button-container">
+            <a href="OccurEase.html">
+         <button type="submit">Register</button>
+            </a>
+         </div>
+        </form>
+
+    </div>
+  </div>  
+  <script src="form1.js"></script>
+     
+</body> 
